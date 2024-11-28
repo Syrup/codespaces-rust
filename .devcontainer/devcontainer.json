@@ -13,23 +13,18 @@
     "server": "cargo run"
   },
   "portsAttributes": {
-    "8888": {
+    "8080": {
       "label": "Application",
-      "onAutoForward": "openPreview"
+      "onAutoForward": "openBrowser"
     }
   },
   "customizations": {
     "codespaces": {
-      "openFiles": [
-        "src/main.rs",
-        "templates/index.html"
-      ]
+      "openFiles": ["src/main.rs"]
     },
     "vscode": {
-      "extensions": [
-        "rust-lang.rust-analyzer"
-      ]
+      "extensions": ["rust-lang.rust-analyzer"]
     }
   },
-  "forwardPorts": [8888]
+  "forwardPorts": [8080]
 }
